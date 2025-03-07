@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a New Message</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        body {
+            border: 2px solid black;
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #00246B;
+        }
+        form {
+            text-align: center;
+        }
+        a {
+            background-color: blue;
+            color: white;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+        }
+        a:hover {
+            background-color: rgb(108, 151, 251);
+        }
+        .content {
+            background-color: #CADCFC;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Add a New Message</h1>
+    
+        <form method="POST" action="/new">
+            <label for="user">Name:</label>
+            <input type="text" id="user" name="user" required>
+        
+            <label for="messageText">Message:</label>
+            <input type="text" id="messageText" name="text" required>
+        
+            <button type="submit">Send</button>
+        </form>
+
+        <br>
+        <a href="/">Back</a>
+    </div>
+</body>
+</html>
